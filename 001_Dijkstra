@@ -1,0 +1,12 @@
+# IA_P3
+
+def encontrar_maximo(lista):
+    maximo = lista[0] # asumimos que el primer número es el máximo
+    for numero in lista:
+        if numero > maximo: # si encontramos un número mayor, lo actualizamos como máximo
+            maximo = numero
+    return maximo
+
+numeros = [10, 5, 20, 8, 15]
+maximo = encontrar_maximo(numeros)
+print("El número máximo es:", maximo)
